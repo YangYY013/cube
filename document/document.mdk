@@ -1,0 +1,35 @@
+Title         : 用户信用评分
+Author        : You
+Logo          : True
+
+[TITLE]
+
+# 背景
+
+银行在市场经济中起着至关重要的作用。
+他们决定谁可以获得融资以及在什么条件下获得投资决策。
+要使市场和社会发挥作用，个人和公司需要获得信贷信用评分算法，
+用于猜测违约概率。这是银行用来确定是否应该授予贷款的方法
+
+* Read the [reference manual].
+* Explore the upper-right toolbox menu to discover how Markdown works. 
+* `Alt-Q` reformats the current paragraph.
+
+Enjoy!
+
+[reference manual]: http://research.microsoft.com/en-us/um/people/daan/madoko/doc/reference.html  "Madoko reference manual"
+
+# 数据介绍
+
+数据来自Kaggle的Give Me Some Credit，
+数据包括250,000名借款人提供的个人消费、贷款、资产状况信息，
+含有借款人的基本属性、偿债能力、信用往来、财产状况。
+
+
+
+
+
+
+
+# 模型效果
+
