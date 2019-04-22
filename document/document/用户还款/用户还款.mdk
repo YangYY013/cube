@@ -1,0 +1,51 @@
+Title         : 用户还款能力预测
+Author        : 通付盾
+
+
+[TITLE]
+
+# 背景
+
+2005年台湾爆发卡债危机，数十万人沦为“卡奴”。“卡债”是指因办理信用卡、现金卡透支消费而欠下的债务，“卡奴”是指无力偿还“卡债”的人。持卡人的过度消费导致债台高筑，陷入以卡养卡的恶性循环。一些“卡奴”因受到银行逼债，甚至被黑道上的讨债公司逼迫而自杀的新闻报道屡屡见诸台湾媒体，成为岛内持续发烧的议题。
+据台湾媒体公布的资料，2000年时，台湾信用卡及现金卡数量仅有1830万张；而到2006年，这两种卡数量增长到4555万张，但台湾民众收入的增加速度却滞后，因此造成“卡债”和“卡奴”大增。
+而银行的不当催收，导致暴力事件频发，部分债务人选择自杀，卡债风暴迅速由金融问题演化为社会问题。
+因此在发放信用卡的同时做好风险防范，准确评估用户的信用风险，还款能力等各要素就非常重要。
+
+
+# 数据介绍
+
+数据来自UCI，包括2005年台湾信用卡客户贷款违约数据
+[Give Me Some Credit]: https://www.kaggle.com/c/GiveMeSomeCredit/data
+|--------------------------------------|----------|
+| 变量名                               | 变量解释 |
++:------------------------------------:|:--------:+
+|SeriousDlqin2yrs                      |好客户坏客户|
+| RevolvingUtilizationOfUnsecuredLines | 除房地产贷款和车贷等债务的贷款占信用卡贷款上限的比例 |
+|age                                   | 年龄|
+|NumberOfTime30-59DaysPastDueNotWorse  |  借款人逾期30-59天的次数|
+| |
+~ Theorem { #th-euler }
+(_Euler's formula_)\
+For any real number $x$, we have: $e^{ix} = \cos x + i \sin x$.
+~
+
+#sec-math
+
+| DebtRatio                            |  负债比率（每月债务支付、赡养费、生活费用除以总收入）        |
+| MonthlyIncome                        |月收入|
+|NumberOfOpenCreditLinesAndLoans       |公开贷款和信贷额度 |
+|NumberOfTimes90DaysLate             |  借款人逾期唱过90天的次数|
+|NumberRealEstateLoansOrLines          | 抵押贷款和房地产贷款的信贷额度  |
+|NumberOfTime60-89DaysPastDueNotWorse  |     借款人逾期60-89天的次数     |
+| NumberOfDependents                   |家属人数|
+|--------------------------------------|----------|
+{数据集介绍}
+
+
+# 模型效果
+
+可以看到模型的AUC值为0.85，说明模型的效果很好。
+
+![output_34_1]
+
+[output_34_1]: images/output_34_1.png "output_34_1" { width:auto; max-width:90% }
