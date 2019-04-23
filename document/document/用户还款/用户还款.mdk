@@ -44,28 +44,15 @@ Author        : 通付盾
 | PAY_AMT5  | 2005年5月以前的付款额（新台币）                                                                                                   |
 | PAY_AMT6  | 2005年4月以前的付款额（新台币）                                                                                                   |
 |  default.payment.next.month  |  默认付款（1 =是，0 =否） |
-~ Theorem { #th-euler }
-(_Euler's formula_)\
-For any real number $x$, we have: $e^{ix} = \cos x + i \sin x$.
-~
-
-#sec-math
-
-| DebtRatio                            |  负债比率（每月债务支付、赡养费、生活费用除以总收入）        |
-| MonthlyIncome                        |月收入|
-|NumberOfOpenCreditLinesAndLoans       |公开贷款和信贷额度 |
-|NumberOfTimes90DaysLate             |  借款人逾期唱过90天的次数|
-|NumberRealEstateLoansOrLines          | 抵押贷款和房地产贷款的信贷额度  |
-|NumberOfTime60-89DaysPastDueNotWorse  |     借款人逾期60-89天的次数     |
-| NumberOfDependents                   |家属人数|
 |--------------------------------------|----------|
 {数据集介绍}
 
 
 # 模型效果
 
-可以看到模型的AUC值为0.85，说明模型的效果很好。
+可以看到模型的AUC值为0.87，说明模型的效果很好。
 
-![output_34_1]
+![微信截图_20190423104714]
 
-[output_34_1]: images/output_34_1.png "output_34_1" { width:auto; max-width:90% }
+[微信截图_20190423104714]: images/-_20190423104714.png "微信截图_20190423104714" { width:auto; max-width:90% }
+
